@@ -1,14 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Icon } from 'react-native-elements';
+import { StyleSheet } from 'react-native';
+import { Container, Header, Title, Button, Left, Right, Body, Icon, Text } from 'native-base';
 
 export default class Account extends React.Component {
     render() {
       return (
-        <View style={styles.container}>
+        <Container style={styles.container}>
         <Icon name='home' />
           <Text>Account Test Page</Text>
-        </View>
+          <Button onPress={() => this.props.navigation.goBack()}>
+            <Text>Back</Text>
+          </Button>
+        </Container>
       );
     }
   }
