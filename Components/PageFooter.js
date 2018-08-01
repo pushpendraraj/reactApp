@@ -49,18 +49,17 @@ export default class PageFooter extends React.Component {
 
             <Footer>
                 <FooterTab>
-                    <Button iconLeft transparent primary  active={this.state.tab1} onPress={() => this.toggleTab1()}>
+                    <Button  transparent primary style={{ alignSelf: "center" }}  active={this.state.tab1} onPress={() => this.toggleTab1()}>
+                        <Icon name="ios-home" />
+                    </Button>
+                    <Button  transparent primary style={{ alignSelf: "center" }}  active={this.state.tab2} onPress={() => this.toggleTab2()}>
                         <Icon name="ios-menu" />
-                        
                     </Button>
-                    <Button iconLeft transparent primary  active={this.state.tab2} onPress={() => this.toggleTab2()}>
-                    <Icon name="ios-menu" />
+                    <Button  transparent primary style={{ alignSelf: "center" }} active={this.state.tab3} onPress={() => this.toggleTab3()}>
+                        <Icon name="ios-menu" />
                     </Button>
-                    <Button iconLeft transparent primary active={this.state.tab3} onPress={() => this.toggleTab3()}>
-                        <Text>Navigate</Text>
-                    </Button>
-                    <Button iconLeft transparent primary active={this.state.tab4} onPress={() => this.toggleTab4()}>
-                        <Text>more..</Text>
+                    <Button iconLeft transparent primary style={{ alignSelf: "center" }} active={this.state.tab4} onPress={() => this.toggleTab4()}>
+                        <Icon name="ios-menu" />
                     </Button>
                 </FooterTab>
             </Footer>
